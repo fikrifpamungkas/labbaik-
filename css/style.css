@@ -1,0 +1,776 @@
+/* ======================================================
+   STYLE.CSS
+   Media Interaktif Manasik Haji
+   Author : Fikri
+====================================================== */
+
+/* ===============================
+   GOOGLE FONT
+================================= */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===============================
+   RESET
+================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#F7FAFC;
+    overflow-x:hidden;
+    color:#333;
+
+}
+
+/* ===============================
+   ROOT COLOR
+================================= */
+
+:root{
+
+    --biru:#4FC3F7;
+    --kuning:#FFD54F;
+    --hijau:#66BB6A;
+    --putih:#ffffff;
+    --gelap:#37474F;
+    --abu:#ECEFF1;
+
+}
+
+/* ===============================
+   SPLASH SCREEN
+================================= */
+
+#splash{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100vh;
+
+    background:linear-gradient(
+        135deg,
+        #4FC3F7,
+        #81D4FA
+    );
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-direction:column;
+
+    z-index:99999;
+
+}
+
+#splash h1{
+
+    color:white;
+
+    margin-top:20px;
+
+    font-size:40px;
+
+    font-weight:bold;
+
+}
+
+#splash p{
+
+    color:white;
+
+    margin-top:10px;
+
+    font-size:20px;
+
+}
+
+.logo{
+
+    width:200px;
+
+    animation:logo 2s infinite;
+
+}
+
+@keyframes logo{
+
+0%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.1);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+/* ===============================
+   LOADER
+================================= */
+
+.loader{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    border:8px solid white;
+
+    border-top:8px solid orange;
+
+    margin-top:30px;
+
+    animation:loading 1s linear infinite;
+
+}
+
+@keyframes loading{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+/* ===============================
+   NAVBAR
+================================= */
+
+.navbar{
+
+    background:#29B6F6;
+
+    padding:18px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+}
+
+.navbar-brand{
+
+font-size:28px;
+
+font-weight:bold;
+
+color:white !important;
+
+}
+
+.nav-link{
+
+color:white !important;
+
+font-size:18px;
+
+margin-left:20px;
+
+transition:.4s;
+
+}
+
+.nav-link:hover{
+
+color:#FFD54F !important;
+
+}
+
+/* ===============================
+   HERO
+================================= */
+
+.hero{
+
+padding:100px 0;
+
+background:linear-gradient(
+180deg,
+#E1F5FE,
+#ffffff
+);
+
+}
+
+.hero h1{
+
+font-size:55px;
+
+font-weight:700;
+
+color:#37474F;
+
+}
+
+.hero span{
+
+color:#29B6F6;
+
+}
+
+.hero p{
+
+margin-top:20px;
+
+font-size:20px;
+
+line-height:35px;
+
+color:#555;
+
+}
+
+.hero-image{
+
+animation:heroFloat 3s infinite ease-in-out;
+
+}
+
+@keyframes heroFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-15px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+/* ===============================
+   BUTTON
+================================= */
+
+.button-area{
+
+margin-top:35px;
+
+}
+
+.button-area .btn{
+
+padding:15px 40px;
+
+border-radius:50px;
+
+font-size:18px;
+
+font-weight:bold;
+
+margin-right:15px;
+
+transition:.4s;
+
+}
+
+.button-area .btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 15px 25px rgba(0,0,0,.2);
+
+}
+
+/* ===============================
+   FITUR
+================================= */
+
+.fitur{
+
+padding:80px 0;
+
+}
+
+.fitur h2{
+
+font-weight:bold;
+
+margin-bottom:40px;
+
+}
+
+.card{
+
+border:none;
+
+border-radius:20px;
+
+padding:40px;
+
+transition:.4s;
+
+text-align:center;
+
+box-shadow:0 10px 20px rgba(0,0,0,.08);
+
+}
+
+.card:hover{
+
+transform:translateY(-10px);
+
+}
+
+.card i{
+
+font-size:70px;
+
+margin-bottom:25px;
+
+color:#29B6F6;
+
+}
+
+.card h4{
+
+font-weight:bold;
+
+margin-bottom:15px;
+
+}
+
+.card p{
+
+font-size:17px;
+
+}
+
+/* ===============================
+   TAHAPAN
+================================= */
+
+.tahapan{
+
+padding:80px 0;
+
+background:#F1F8E9;
+
+}
+
+.tahapan h2{
+
+text-align:center;
+
+font-weight:bold;
+
+margin-bottom:50px;
+
+}
+
+.timeline{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+gap:25px;
+
+}
+
+.item{
+
+background:white;
+
+padding:25px;
+
+border-radius:15px;
+
+font-weight:bold;
+
+text-align:center;
+
+box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.item:hover{
+
+background:#4FC3F7;
+
+color:white;
+
+transform:scale(1.05);
+
+}
+
+/* ===============================
+   KARAKTER
+================================= */
+
+.karakter{
+
+padding:80px 0;
+
+}
+
+.karakter img{
+
+width:250px;
+
+transition:.4s;
+
+}
+
+.karakter img:hover{
+
+transform:scale(1.08);
+
+}
+
+.karakter h3{
+
+margin-top:20px;
+
+font-weight:bold;
+
+}
+
+/* ===============================
+   FOOTER
+================================= */
+
+footer{
+
+background:#29B6F6;
+
+color:white;
+
+padding:25px;
+
+text-align:center;
+
+margin-top:50px;
+
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media(max-width:992px){
+
+.hero{
+
+text-align:center;
+
+}
+
+.hero h1{
+
+font-size:40px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.hero-image{
+
+margin-top:40px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding:60px 20px;
+
+}
+
+.navbar-brand{
+
+font-size:22px;
+
+}
+
+.button-area .btn{
+
+display:block;
+
+width:100%;
+
+margin-bottom:15px;
+
+}
+
+.card{
+
+margin-bottom:25px;
+
+}
+
+}
+
+/* ===============================
+   GAME INTERAKTIF
+================================= */
+
+
+.game-item{
+
+    width:100%;
+    
+    margin-bottom:40px;
+    
+    }
+    
+    
+    
+    .game-item .card{
+    
+    max-width:750px;
+    
+    margin:auto;
+    
+    padding:35px;
+    
+    }
+    
+    
+    
+    .game-item img{
+    
+    max-width:300px;
+    
+    margin:30px auto;
+    
+    display:block;
+    
+    border-radius:20px;
+    
+    }
+    
+    
+    
+    .game-item button{
+    
+    font-size:18px;
+    
+    padding:12px;
+    
+    border-radius:30px;
+    
+    }
+    
+    
+    
+    .hasil{
+    
+    margin-top:20px;
+    
+    font-size:20px;
+    
+    font-weight:bold;
+    
+    color:#29B6F6;
+    
+    }
+
+    
+
+    /* ===========================
+   TEMPLATE WEBSITE
+=========================== */
+
+body{
+   font-family:'Poppins',sans-serif;
+   background:#f3f8fc;
+}
+
+/* Navbar */
+
+.navbar{
+   background:#2ea8e6 !important;
+   padding:15px 0;
+}
+
+.navbar-brand{
+   color:white !important;
+   font-size:40px;
+   font-weight:bold;
+}
+
+.navbar-nav .nav-link{
+   color:white !important;
+   font-size:28px;
+   margin-left:25px;
+}
+
+.navbar-nav .nav-link:hover{
+   color:#ffe082 !important;
+}
+
+/* Header */
+
+.page-header{
+
+   background:linear-gradient(#dff3ff,#f8fbff);
+
+   text-align:center;
+
+   padding:80px 20px;
+
+}
+
+.page-header h1{
+
+   font-size:70px;
+
+   font-weight:bold;
+
+}
+
+.page-header span{
+
+   color:#2ea8e6;
+
+}
+
+.page-header p{
+
+   font-size:24px;
+
+   margin-top:20px;
+
+}
+
+/* Card */
+
+.content-box{
+
+   background:white;
+
+   padding:40px;
+
+   border-radius:25px;
+
+   box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+   margin-top:40px;
+
+}
+
+/* Judul */
+
+.section-title{
+
+   color:#2ea8e6;
+
+   font-size:40px;
+
+   font-weight:bold;
+
+}
+
+/* Icon */
+
+.big-icon{
+
+   color:#6a3ea1;
+
+   font-size:45px;
+
+}
+
+/* Footer */
+
+footer{
+
+   margin-top:60px;
+
+   background:#2ea8e6;
+
+   color:white;
+
+   text-align:center;
+
+   padding:25px;
+
+}
+
+/* Tombol Musik */
+
+#musicBtn{
+
+   margin-top:15px;
+
+   border-radius:30px;
+
+   padding:10px 25px;
+
+   font-weight:bold;
+
+}
+
+/* ===============================
+   VIDEO EDUKASI
+================================= */
+
+.video-container{
+
+   width:100%;
+
+   max-width:900px;
+
+   margin:auto;
+
+   overflow:hidden;
+
+   border-radius:20px;
+
+   box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+
+.video-edukasi{
+
+   width:100%;
+
+   display:block;
+
+}

@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ayo Belajar Manasik Haji</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Google Font -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<!-- Audio -->
+
+<audio id="bgMusic" loop>
+
+    <source src="audio/lagumanasik.mpeg" type="audio/mpeg">
+
+</audio>
+
+<body>
+
+<!-- ================= Splash Screen ================= -->
+
+<div id="splash">
+
+    <img src="image/OIP.png" class="logo">
+
+    <h1>Ayo Belajar Manasik Haji</h1>
+
+    <p>Bersama Hana dan Hanan</p>
+
+    <div class="loader"></div>
+
+</div>
+
+<!-- ================= Navbar ================= -->
+
+<nav class="navbar navbar-expand-lg navbar-dark">
+
+<div class="container">
+
+<a class="navbar-brand" href="#">
+
+<i class="fa-solid fa-mosque"></i>
+
+Labbaik kids
+
+</a>
+
+<button class="navbar-toggler"
+data-bs-toggle="collapse"
+data-bs-target="#menu">
+
+<span class="navbar-toggler-icon"></span>
+
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+
+<ul class="navbar-nav ms-auto">
+
+<li class="nav-item">
+
+<a class="nav-link active" href="#">Home</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="materi.html">materi</a>
+
+</li>
+
+<li class="nav-item"></li>
+
+<a class="nav-link" href="doa.html">doa</a>
+    
+</li>
+
+
+<li class="nav-item"></li>
+
+<a class="nav-link" href="vidio.html">vidio</a>
+    
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="kahoot.html">kahoot</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="evaluasi.html">evaluasi</a>
+
+</li>
+
+<li class="nav-item">
+
+<a class="nav-link" href="tentang.html">tentang</a>
+
+</li>
+
+
+</ul>
+
+</div>
+
+</div>
+
+</nav>
+
+
+
+<!-- ================= Hero ================= -->
+
+
+<section class="hero">
+
+<div class="container">
+
+<div class="row align-items-center">
+
+<div class="col-lg-6">
+
+<h1>
+
+Ayo Belajar
+
+<span>Manasik Haji</span>
+
+</h1>
+
+<p>
+
+Belajar tata cara ibadah haji menjadi lebih mudah,
+
+menyenangkan, interaktif, dan penuh animasi bersama
+
+Hana dan Hanan.
+
+</p>
+
+<div class="button-area">
+
+<a href="materi.html" class="btn btn-warning">
+
+Mulai Belajar
+
+</a>
+
+<a href="kahoot.html" class="btn btn-warning">
+
+Main Game
+
+</a>
+
+<button class="btn btn-outline-success" onclick="toggleMusic()" id="musicBtn">
+    <i class="fa-solid fa-play"></i> Kenali Musiknya yuk
+</button>
+
+</div>
+
+</div>
+
+<div class="col-lg-6">
+
+<img src="image/hanan&hana.png"
+
+class="img-fluid hero-image">
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Fitur ================= -->
+
+<section class="fitur">
+
+<div class="container">
+
+<h2 class="text-center">
+
+Mau Mulai Darimana nih?
+
+</h2>
+
+<div class="row mt-5">
+
+<div class="col-md-4">
+
+    <a href="materi.html" class="text-decoration-none text-dark">
+
+<div class="card">
+
+
+    
+
+<i class="fa-solid fa-book-open"></i>
+
+<h4>Materi</h4>
+
+<p>
+
+Belajar urutan manasik haji lengkap.
+
+</p>
+
+</div>
+
+</a>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card">
+
+    <a href="kahoot.html" class="text-decoration-none text-dark">
+
+<i class="fa-solid fa-puzzle-piece"></i>
+
+
+<h4>kahoot</h4>
+
+<p>
+
+Belajar sambil bermain.
+
+</p>
+
+</div>
+
+</a>
+
+</div>
+
+<div class="col-md-4">
+
+<div class="card">
+
+    <a href="evaluasi.html" class="text-decoration-none text-dark">
+
+<i class="fa-solid fa-pen"></i>
+
+<h4>evaluasi</h4>
+
+<p>
+
+Kerjakan kuis dan dapatkan nilai.
+
+</p>
+
+</div>
+
+</a>
+
+
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+</section>
+
+<!-- ================= Tahapan ================= -->
+
+<section class="tahapan">
+
+<div class="container">
+
+<h2>
+
+Wajib Haji ada 6, yaitu
+
+</h2>
+
+<div class="timeline">
+
+<div class="item">
+
+1. Ihram dari miqat
+
+</div>
+
+<div class="item">
+
+2. Mabit di Muzdalifah
+
+</div>
+
+<div class="item">
+
+3. Mabit di Mina
+
+</div>
+
+<div class="item">
+
+4. Melontar Jumroh
+
+</div>
+
+<div class="item">
+
+5.Tahallul
+
+</div>
+
+<div class="item">
+
+6. Tertib
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ================= Karakter ================= -->
+
+<section class="karakter">
+
+<div class="container">
+
+<h2>
+
+Teman Belajarmu
+
+</h2>
+
+<div class="row">
+
+<div class="col-md-6">
+
+<img src="image/hanan.png">
+
+<h3>Hanan</h3>
+
+</div>
+
+<div class="col-md-6">
+
+<img src="image/hana.png">
+
+<h3>Hana</h3>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+
+<!-- ================= Footer ================= -->
+
+<footer>
+    <p>
+    © Labbaik kids
+    <br>
+    </p>
+    </footer>
+    
+
+<!-- Bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Javascript -->
+
+<script src="js/script.js"></script>
+
+
+
+</body>
+
+</html>
